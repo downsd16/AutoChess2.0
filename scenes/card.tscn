@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqvonrdbo7fih"]
+
+[ext_resource type="Texture2D" uid="uid://b6mphdv1nrmb4" path="res://textures/king_spade.png" id="1_b5e55"]
+[ext_resource type="Texture2D" uid="uid://ceo0nmglk86vy" path="res://textures/cost_gem.png" id="2_x2hrb"]
+
+[node name="Card" type="Node2D"]
+
+[node name="BaseCardSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_b5e55")
+
+[node name="CostDisplay" type="Node2D" parent="."]
+position = Vector2(61, -87)
+
+[node name="CostBaseSprite" type="Sprite2D" parent="CostDisplay"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_x2hrb")
